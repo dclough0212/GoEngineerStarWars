@@ -1,0 +1,90 @@
+﻿#root {
+    max-width: 100%;
+    padding-right: 1rem;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.table-container, .heading-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.filter-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .responsive-table th,
+    .responsive-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .responsive-table th {
+        background-color: #f9f9f9;
+    }
+
+    .responsive-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+.no-results {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .responsive-table thead {
+        display: none;
+    }
+
+    .responsive-table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .responsive-table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .responsive-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .centered-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
