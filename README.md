@@ -2,7 +2,7 @@
 A Star Wars API Coding Exercise
 
 Setup:
-  Database:  A user will need to be created on the server that is a member of the sysadmin server role.  Specify this user in the connection string in the appsettings.config file 
+  Database:  A user will need to be created on the SQL server that is a member of the sysadmin server role.  Specify this user in the connection string in the appsettings.config file 
 
   The database should be created automatically through EF code first.
 
@@ -18,6 +18,7 @@ Setup:
   ToDo:  1. Needs a mechanism to add/remove Films and Actors
         2. Starwars font not working on my system.
         3.  Add mech onEnter in edit mode to save record and close edit mode.  Nice to have.  Save button does same.
+
 
 
 
