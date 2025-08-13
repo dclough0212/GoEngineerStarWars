@@ -7,10 +7,18 @@ const AddNewStarshipModal = ({ onSubmit: onAddStarship, isOpen: isOpen, onClose:
     name: '',
     model: '',
     manufacturer: '',
-    cost_in_credits: '',
+      cost_in_credits: '',
+      length: '',
+      max_atmosphering_speed: '',
     crew: '',
       passengers: '',
-      url: 'https://swapi.dev/api/starships/#',
+      hyperdrive_rating: '',
+      MGLT: '',
+      starship_class: '',
+      cargo_capacity: '',
+      consumables: '',
+
+    url: 'https://swapi.dev/api/starships/#',
   });
 
   const handleChange = (e) => {
@@ -28,10 +36,18 @@ const AddNewStarshipModal = ({ onSubmit: onAddStarship, isOpen: isOpen, onClose:
       name: '',
       model: '',
       manufacturer: '',
-      cost_in_credits: '',
+        cost_in_credits: '',
+        length: '',
+        max_atmosphering_speed: '',
       crew: '',
         passengers: '',
-        url: 'https://swapi.dev/api/starships/#'
+        hyperdrive_rating: '',
+        MGLT: '',
+        starship_class: '',
+        cargo_capacity: '',
+        consumables: '',
+
+      url: 'https://swapi.dev/api/starships/#'
     });
     onClose();
   };
@@ -82,6 +98,24 @@ const AddNewStarshipModal = ({ onSubmit: onAddStarship, isOpen: isOpen, onClose:
               onChange={handleChange}
             />
           </label>
+        <label>
+            Length:
+            <input
+                type="number"
+                name="length"
+                value={starship.length}
+                onChange={handleChange}
+            />
+                  </label>
+                  <label>
+                      Max Atmosphering Speed:
+                      <input
+                          type="number"
+                          name="max_atmosphering_speed"
+                          value={starship.max_atmosphering_speed}
+                          onChange={handleChange}
+                      />
+                  </label>
           <label>
             Crew:
             <input
